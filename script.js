@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Form and feedback div selection
+document.addEventListener("DOMContentLoaded", function () {
+    // Select form and feedback div
     const form = document.getElementById("registration-form");
     const feedbackDiv = document.getElementById("form-feedback");
   
-    // Form submission event listener
-    form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Prevent form submission
+    // Add event listener for form submission
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission
   
-      // Retrieve user inputs
+      // Retrieve and trim user inputs
       const username = document.getElementById("username").value.trim();
       const email = document.getElementById("email").value.trim();
       const password = document.getElementById("password").value.trim();
